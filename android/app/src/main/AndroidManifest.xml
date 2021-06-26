@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dz.devlog.testapp">
+    package="com.devlog.testci">
    <application
         android:label="testapp"
         android:icon="@mipmap/ic_launcher">
