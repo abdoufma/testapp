@@ -27,6 +27,12 @@ workflows:
           include: true
     scripts:
       - |
+        # set up Github SSH Access
+        echo "${SSH_KEY}" > /tmp/ssh_key
+        chmod 600 /tmp/ssh_key
+        eval `ssh-agent -s`
+        EOF
+      - |
         # set up key.properties
         echo $FCI_KEYSTORE | base64 --decode > $FCI_KEYSTORE_PATH
         cat >> "$FCI_BUILD_DIR/android/key.properties" <<EOF
