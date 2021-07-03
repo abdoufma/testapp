@@ -73,16 +73,6 @@ workflows:
       cocoapods: default
     cache:
       cache_paths: []
-    triggering:
-      events:
-        - push
-      branch_patterns:
-        - pattern: '*'
-          include: true
-          source: true
-      tag_patterns:
-        - pattern: '*'
-          include: true
     scripts:
       - |
         # set up key.properties
