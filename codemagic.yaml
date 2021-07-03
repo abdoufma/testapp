@@ -31,7 +31,6 @@ workflows:
         echo "${SSH_KEY}" > /tmp/ssh_key
         chmod 600 /tmp/ssh_key
         eval `ssh-agent -s`
-        EOF
       - |
         # set up key.properties
         echo $FCI_KEYSTORE | base64 --decode > $FCI_KEYSTORE_PATH
